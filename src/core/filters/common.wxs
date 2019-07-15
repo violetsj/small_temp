@@ -1,0 +1,34 @@
+var textLengthSet = function (value, max) {
+  if (!value) return ''
+  if (!max) return value;
+  if (value.length <= max) return value;
+  if (value.length > max) {
+    value = value.substr(0, max);
+    return value + "...";
+  }
+}
+module.exports = {
+    textLengthSet: textLengthSet
+  }
+
+// export default (Vue)=>{
+// 	// {{item.Name|textLengthSet(9)}} 用法
+// 	Vue.filter('textLengthSet', function(value,max) {
+// 		  if (!value) return ''
+// 		  if (!max) return value;
+// 		  if (value.length <= max) return value;
+// 		  if(value.length>max){
+// 		  	value = value.substr(0, max);
+// 		  	return value+"...";
+// 		  }
+//     })
+// }
+
+
+// var moneyFormat = function (num, length) {
+//   var num = parseFloat(num).toFixed(length || 2);
+//   return num;
+// }
+// module.exports = {
+//   moneyFormat: moneyFormat
+// }

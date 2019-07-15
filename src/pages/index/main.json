@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "i-icon": "../../static/dist/icon/index",
+        "i-rate": "../../static/dist/rate/index",
+        "i-notice-bar": "../../static/dist/notice-bar/index"
+    }
+}
